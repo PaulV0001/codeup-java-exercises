@@ -32,8 +32,21 @@ public class ControlFlowExercises {
 //        } while (nextInt <= 1000000);
 
 
-        for (int nextInt = 2; nextInt <= 1000000; nextInt *= 2) {
-            System.out.println(nextInt);
+//        for (int nextInt = 2; nextInt <= 1000000; nextInt *= 2) {
+//            System.out.println(nextInt);
+//        }
+
+
+        for (int nextFizz = 1; nextFizz <= 100; nextFizz++) {
+            if (nextFizz % 15 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (nextFizz % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (nextFizz % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(String.valueOf(nextFizz));
+            }
         }
 
         }
