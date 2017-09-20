@@ -45,7 +45,7 @@ public class ControlFlowExercises {
             } else if (nextFizz % 5 == 0) {
                 System.out.println("Buzz");
             } else {
-                System.out.println(String.valueOf(nextFizz));
+                System.out.println(nextFizz);
             }
         }
 
@@ -87,6 +87,25 @@ public class ControlFlowExercises {
 
         }
         while (!choice.equalsIgnoreCase("n"));
+
+
+        int grade;
+
+        System.out.println("Enter a grade from 0-100:");
+        grade = sc.nextInt();
+
+        if (grade >= 88) {
+            System.out.println("A");
+        } else if (grade >= 80) {
+            System.out.println("B");
+        } else if (grade >= 67) {
+            System.out.println("C");
+        } else if (grade >= 60) {
+            System.out.println("D");
+        } else {
+            System.out.println("F");
+        }
+
     }
 
 
