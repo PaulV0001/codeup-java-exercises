@@ -1,20 +1,25 @@
 public class Person {
     private String name;
 
+    public Person(String name) {
+        this.name = name;
+    }
+
+
     // returns the person's name
-    public String getName;
+    public String getName(){
+        return name;
+    }
+    
+   
 
 
-    public Person(String aGetName) {
-        getName = aGetName;
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Person() {
-
+    public void sayHello() {
+        System.out.println("Hello " + name);
     }
-
-    public String name() {
-        return getName;
-    }
-
 }
