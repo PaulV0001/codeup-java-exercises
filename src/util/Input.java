@@ -8,6 +8,8 @@ public class Input {
         Input input = new Input();
         System.out.println(input.getString("Type in a message..."));
         System.out.println(input.yesNo("Is it raining today?"));
+        System.out.println(input.getInt(1, 10));
+        System.out.println(input.getDouble(1, 10));
 
     }
 
@@ -34,6 +36,39 @@ public class Input {
       }
 
   }
+
+    public int getInt(int min, int max){
+
+        System.out.println("Give me an Integer between " + min + " and  " + max);
+        int input = Integer.parseInt(scanner.nextLine());
+
+        if(input < min || input > max){
+            System.out.println("Outside of the limit");
+            getInt(min, max);
+        }else{
+            System.out.println("Valid input");
+            return input;
+        }
+
+        return 0;
+    }
+
+    public double getDouble(double min, double max) {
+
+        System.out.println("Give me an Integer between " + min + " and  " + max);
+        int input = Integer.parseInt(scanner.nextLine());
+
+        if(input < min || input > max){
+            System.out.println("Outside of the limit");
+            getDouble(min, max);
+        }else{
+            System.out.println("Valid input");
+            return input;
+        }
+
+        return 0;
+
+    }
 
 
 
