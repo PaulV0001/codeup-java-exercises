@@ -5,17 +5,28 @@ public class Input {
     private Scanner scanner;
 
     public static void main(String[] args) {
-        Input input = new Input();
-        System.out.println(input.getString("Type in a message..."));
-        System.out.println(input.yesNo("Is it raining today?"));
-        System.out.println(input.getInt(1, 10));
-        System.out.println(input.getDouble(1, 10));
+//        Input input = new Input();
+//        System.out.println(input.getString("Type in a message..."));
+//        System.out.println(input.yesNo("Is it raining today?"));
+//        System.out.println(input.getInt(1, 10));
+//        System.out.println(input.getDouble(1, 10));
 
     }
 
     public Input() {
         this.scanner = new Scanner(System.in);
     }
+
+//    public int getInt() {
+//        if (this.scanner.hasNextInt()) {
+//            return this.scanner.nextInt();
+//        } else {
+//            System.out.println();
+//            scanner.nextLine();
+//            return getInt();
+//        }
+//
+//    }
 
   public String getString(String ask) {
       System.out.println(ask);
