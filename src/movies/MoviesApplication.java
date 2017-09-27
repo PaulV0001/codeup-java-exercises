@@ -23,6 +23,7 @@ public class MoviesApplication {
 
         if (userInput == 0) {
             System.out.println("Exiting");
+            break;
         } else if (userInput == 1) {
             Movie[] allMovies = MoviesArray.findAll();
             for (Movie movie : allMovies) {
