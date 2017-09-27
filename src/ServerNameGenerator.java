@@ -22,12 +22,12 @@ public class ServerNameGenerator {
 //        }
 
         int rand = (int) (Math.random() * length);
-        int ran = (int) (Math.random() * nounLength);
+        int rand2 = (int) (Math.random() * nounLength);
 
         System.out.println("Here is your server name:");
 
         System.out.print(adjectives[rand] + " - ");
-        System.out.print(nouns[ran]);
+        System.out.print(nouns[rand2]);
 
 
 
