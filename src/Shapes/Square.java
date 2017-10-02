@@ -1,6 +1,6 @@
 package Shapes;
 
-public class Square extends Quadralateral {
+public class Square extends Quadrilateral {
 
     @Override
     public void setLength(int l) {
